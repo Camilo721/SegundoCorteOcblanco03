@@ -118,86 +118,101 @@ nav ul li:hover .dropdown {
     border-radius: 10px;
 }
 
-.background-container {
-    position: relative;
+.search-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .phone-background {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-    width: 300px; /* Ajusta el tamaño del teléfono */
-    opacity: 0.3; /* Cambia la opacidad si quieres que se vea detrás */
-  }
-  
-  .content {
-    position: relative;
-    z-index: 2;
-    text-align: center;
-    padding-top: 100px; /* Ajusta el padding para mover el texto hacia abajo */
-  }
-  
-  form {
-    margin-top: 20px;
-  }
-  
-  input[type="text"] {
-    padding: 10px;
-    width: 200px;
-    border-radius: 5px;
+    max-width: 500px;
     border: 1px solid #ccc;
+    border-radius: 25px;
+    overflow: hidden;
   }
   
-  button {
+  #search-input {
+    flex: 1;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  #submit-button {
     padding: 10px 20px;
-    background-color: green;
+    background-color: #4CAF50;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 0 25px 25px 0;
     cursor: pointer;
+    font-size: 16px;
   }
   
-  .image-slider {
-    margin-top: 20px;
-  }
-  
-  .image-slider img {
-    max-width: 100%;
-    border-radius: 10px;
+  #submit-button:hover {
+    background-color: #45a049;
   }
   
 /* Sección de Beneficios */
-.benefits {
+.info-cards {
     display: flex;
     justify-content: space-between;
-    padding: 50px;
-    background-color: #fff;
-}
-
-.benefit-item {
+    gap: 20px;
+    padding: 20px;
+    background-color: #f8f8f8ea;
+  }
+  
+  .card {
+    background-color:#dedede;
+    border-radius: 10px;
+    padding: 20px;
     text-align: center;
-}
-
-.benefit-item i {
-    font-size: 40px;
-    color: #4CAF50;
-}
-
-.benefit-item p {
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-.benefit-item span {
-    color: gray;
-}
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+  }
+  
+  .icon {
+    background-color: #ffc107;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 10px auto;
+  }
+  
+  .icon img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  h3 {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  p {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  /* Para pantallas más pequeñas */
+  @media screen and (max-width: 768px) {
+    .info-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .card {
+      width: 100%;
+      max-width: 300px;
+      margin-bottom: 20px;
+    }
+  }
+  
 
 /* Sección de Productos */
+
+
 .productos {
     padding: 50px;
     background-color: #f5f5f5;
@@ -225,42 +240,91 @@ nav ul li:hover .dropdown {
     cursor: pointer;
 }
 
-.products-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+.product-grid {
+    display: flex;
+    justify-content:center;
     gap: 20px;
-}
-
-.product-item {
-    background-color: white;
     padding: 20px;
+  }
+
+  .product-card {
+    background-color: white;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 250px; /* Aproximadamente 4 tarjetas por fila */
     text-align: center;
-}
+  }
+  
+  .product-image {
+    position: relative;
+  }
+  
+  .product-image img {
+    width: 100%;
+    height: auto;
+  }
 
-.product-item img {
-    width: 100px;
-    margin-bottom: 10px;
-}
-
-.product-item h3 {
+  .label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ff9800;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+  
+  .product-info {
+    padding: 15px;
+  }
+  
+  .product-info h3 {
     font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.product-item p {
+    color: #333;
+  }
+  
+  .product-info p {
+    font-size: 14px;
+    color: #777;
+    margin: 10px 0;
+  }
+  
+  .price {
     font-size: 16px;
     color: #333;
-}
-
-.add-to-cart {
-    padding: 10px 20px;
-    background-color: #4CAF50;
+    margin-bottom: 15px;
+  }
+  
+  .add-to-cart {
+    background-color: #28a745;
     color: white;
     border: none;
+    padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
-}
+    font-size: 14px;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #218838;
+  }
+  
+  /* Adaptación para pantallas pequeñas */
+  @media screen and (max-width: 768px) {
+    .product-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .product-card {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  
+
 
 /* ---- MEDIA QUERIES PARA RESPONSIVE DESIGN ---- */
 
@@ -339,5 +403,33 @@ nav ul li:hover .dropdown {
 
     .product-item {
         padding: 10px;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 500px) {
+    /* Cambiar el orden de los elementos dentro del banner */
+    .banner {
+        display: flex;
+        flex-direction: column-reverse; /* Esto pone la imagen primero y luego el texto */
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Cambiar el color del texto a azul */
+    .banner-text h1 {
+        color: blue;
+    }
+
+    /* Asegurarse de que la imagen se ajuste al ancho de la pantalla */
+    .banner-image img {
+        width: 100%;
+        max-width: 400px; /* O cualquier otro tamaño que prefieras */
+        height: auto;
+    }
+
+    /* Ajustar el formulario para que se vea mejor en pantallas pequeñas */
+    .banner-text form input {
+        width: 80%; /* Para que el campo de búsqueda no sea demasiado pequeño */
     }
 }
