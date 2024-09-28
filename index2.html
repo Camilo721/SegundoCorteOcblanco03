@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruver - Tienda de Productos Orgánicos</title>
+    <link rel="stylesheet" href="/CSS/fruver.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- Para los iconos de FontAwesome -->
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Fruver</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Tienda</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Páginas</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Carrito</a></li>
+                        <li><a href="#">Checkout</a></li>
+                        <li><a href="#">Comentarios</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contactenos</a></li>
+            </ul>
+        </nav>
+        <div class="search-cart-login">
+            <div class="search-icon">
+                <i class="fas fa-search"></i>
+                <img src="/assets/images/busqueda-de-lupa.png" alt="Busqueda">
+            </div>
+            <div class="cart">
+                <i class="fas fa-shopping-cart"></i>
+                <img src="/assets/images/anadir-al-carrito.png" alt="carrito">
+            </div>
+            <div class="login">
+                <i class="fas fa-user"></i>
+                <img src="/assets/images/usuario.png" alt="icono usuario">
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección de Banner -->
+    <section class="banner">
+        <div class="banner-text">
+            <h1>Organic Veggies & Fruits Foods</h1>
+            <p>100% Organic Foods</p>
+            <form>
+                <input type="text" placeholder="Search">
+                <button type="submit">Submit Now</button>
+            </form>
+        </div>
+        <div class="banner-image">
+            <img src="/assets/images/banner-frutas.png" alt="Banner de frutas">
+        </div>
+        
+    <div class="background-container">
+        <img src="/assets/images/hand-touching-smartphone-598750.png" alt="Cellphone" class="phone-background">
+        <div class="content">
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Sección de Beneficios -->
+    <section class="benefits">
+        <div class="benefit-item">
+            <i class="fas fa-car"></i>
+            <p>Free Shipping</p>
+            <span>Free on order over $300</span>
+        </div>
+        <div class="benefit-item">
+            <i class="fas fa-shield-alt"></i>
+            <p>Security Payment</p>
+            <span>100% secure payments</span>
+        </div>
+        <div class="benefit-item">
+            <i class="fas fa-undo-alt"></i>
+            <p>30 Day Return</p>
+            <span>30 day money back guarantee</span>
+        </div>
+        <div class="benefit-item">
+            <i class="fas fa-headset"></i>
+            <p>24/7 Support</p>
+            <span>Support every time fast</span>
+        </div>
+    </section>
+
+    <!-- Sección de Productos -->
+    <section class="productos">
+        <h2>Productos Orgánicos</h2>
+        <div class="filters">
+            <button>Todos los productos</button>
+            <button>Vegetales</button>
+            <button>Frutas</button>
+            <button>Pan de cereales</button>
+        </div>
+        <div class="products-grid">
+            <!-- Aquí irían los productos (como las uvas, frambuesas, etc.) -->
+            <div class="product-item">
+                <img src="grapes.png" alt="Grapes">
+                <h3>Grapes</h3>
+                <p>$4.99 / kg</p>
+                <button class="add-to-cart">Add to cart</button>
+            </div>
+            <!-- Repetir para otros productos -->
+        </div>
+    </section>
+
+    <script src="/script/fruverjs.js"></script>
+</body>
+</html>
