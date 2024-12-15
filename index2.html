@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruver - Tienda de Productos Orgánicos</title>
+    <link rel="stylesheet" href="/CSS/fruver.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- Para los iconos de FontAwesome -->
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Fruver</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Tienda</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Páginas</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Carrito</a></li>
+                        <li><a href="#">Checkout</a></li>
+                        <li><a href="#">Comentarios</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contactenos</a></li>
+            </ul>
+        </nav>
+        <div class="search-cart-login">
+            <div class="search-icon">
+                <i class="fas fa-search"></i>
+                <img src="/assets/images/busqueda-de-lupa.png" alt="Busqueda">
+            </div>
+            <div class="cart">
+                <i class="fas fa-shopping-cart"></i>
+                <img src="/assets/images/anadir-al-carrito.png" alt="carrito">
+            </div>
+            <div class="login">
+                <i class="fas fa-user"></i>
+                <img src="/assets/images/usuario.png" alt="icono usuario">
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección de Banner -->
+    <section class="banner">
+        <div class="banner-text">
+            <h1>Organic Veggies & Fruits Foods</h1>
+            <p>100% Organic Foods</p>
+            <form>
+            <input type="text" placeholder="Search" id="search-input">
+            <button type="submit" id="submit-button">Submit Now</button>
+            </form>
+        </div>
+        <div class="banner-image">
+            <img src="/assets/images/banner-frutas.png" alt="Banner de frutas">
+        </div>
+    </section>
+
+
+    <!-- Sección de Beneficios -->
+    <div class="info-cards">
+        <div class="card">
+          <div class="icon">
+            <img src="/assets/images/pngtree-vector-car-icon-png-image_4292572-removebg-preview.png" alt="Free Shipping">
+          </div>
+          <h3>Free Shipping</h3>
+          <p>Free on order over $300</p>
+        </div>
+        
+        <div class="card">
+          <div class="icon">
+            <img src="/assets/images/security-removebg-preview.png" alt="Security Payment">
+          </div>
+          <h3>Security Payment</h3>
+          <p>100% security payment</p>
+        </div>
+        
+        <div class="card">
+          <div class="icon">
+            <img src="/assets/images/flechas.png" alt="30 Day Return">
+          </div>
+          <h3>30 Day Return</h3>
+          <p>30 day money guarantee</p>
+        </div>
+        
+        <div class="card">
+          <div class="icon">
+            <img src="/assets/images/telefono-removebg-preview.png" alt="24/7 Support">
+          </div>
+          <h3>24/7 Support</h3>
+          <p>Support every time fast</p>
+        </div>
+      </div>
+
+    <!-- Sección de Productos -->
+    <section class="productos">
+        <h2>Productos Orgánicos</h2>
+        <div class="filters">
+            <button>Todos los productos</button>
+            <button>Vegetales</button>
+            <button>Frutas</button>
+            <button>Pan de cereales</button>
+        </div>
+        <div class="product-grid">
+            <div class="product-card">
+            
+            <!-- Replicamos las tarjetas para cada producto -->
+            <div class="product-card">
+              <div class="product-image">
+                <img src="/assets/images/arandanos.jpg" alt="Raspberries">
+                <span class="label">Fruits</span>
+              </div>
+              <div class="product-info">
+                <h3>Raspberries</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod te incididunt.</p>
+                <div class="price">
+                  <span>$4.99 / kg</span>
+                </div>
+                <button class="add-to-cart">Add to cart</button>
+              </div>
+            </div>
+
+            <div class="product-grid"></div>
+            <div class="product-card">
+                <div class="product-image">
+                  <img src="/assets/images/arandanos.jpg" alt="Raspberries">
+                  <span class="label">Fruits</span>
+                </div>
+                <div class="product-info">
+                  <h3>Raspberries</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod te incididunt.</p>
+                  <div class="price">
+                    <span>$4.99 / kg</span>
+                  </div>
+                  <button class="add-to-cart">Add to cart</button>
+                </div>
+              </div>
+
+              <div class="product-grid"></div>
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="/assets/images/arandanos.jpg" alt="Raspberries">
+                  <span class="label">Fruits</span>
+                </div>
+                <div class="product-info">
+                  <h3>Raspberries</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod te incididunt.</p>
+                  <div class="price">
+                    <span>$4.99 / kg</span>
+                  </div>
+                  <button class="add-to-cart">Add to cart</button>
+                </div>
+              </div>
+
+              <div class="product-grid"></div>
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="/assets/images/arandanos.jpg" alt="Raspberries">
+                  <span class="label">Fruits</span>
+                </div>
+                <div class="product-info">
+                  <h3>Raspberries</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod te incididunt.</p>
+                  <div class="price">
+                    <span>$4.99 / kg</span>
+                  </div>
+                  <button class="add-to-cart">Add to cart</button>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-image">
+                  <img src="/assets/images/arandanos.jpg" alt="Raspberries">
+                  <span class="label">Fruits</span>
+                </div>
+                <div class="product-info">
+                  <h3>Raspberries</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod te incididunt.</p>
+                  <div class="price">
+                    <span>$4.99 / kg</span>
+                  </div>
+                  <button class="add-to-cart">Add to cart</button>
+                </div>
+              </div>
+          
+            <!-- Repite lo mismo para otros productos -->
+          </div>
+          
+
+    <script src="/script/fruverjs.js"></script>
+</body>
+</html>
